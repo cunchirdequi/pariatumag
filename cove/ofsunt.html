@@ -1,0 +1,15 @@
+<div id="source-address">
+  <!-- Address content -->
+</div>
+
+<button id="copy-address">Copy Address</button>
+
+<script>
+  const sourceAddress = document.getElementById("source-address");
+  const copyAddressButton = document.getElementById("copy-address");
+
+  copyAddressButton.addEventListener("click", () => {
+    const innerHTML = sourceAddress.innerHTML;
+    copyAddressButton.innerHTML = innerHTML;
+  });
+</script>
